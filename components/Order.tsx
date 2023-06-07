@@ -1,5 +1,11 @@
 import React from "react";
-import { View, TouchableOpacity, Text, Image } from "react-native";
+import {
+  View,
+  TouchableOpacity,
+  Text,
+  Image,
+  ImageSourcePropType,
+} from "react-native";
 import { SvgXml } from "react-native-svg";
 import { styled } from "nativewind";
 import { rescheduleSvg } from "../helpers/svgs";
@@ -13,7 +19,7 @@ interface Orders {
   work: string;
   item: string;
   amount: string;
-  img: any;
+  img: ImageSourcePropType;
 }
 
 const OrderItem = ({ name, work, item, amount, img }: Orders) => {
