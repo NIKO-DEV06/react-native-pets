@@ -3,53 +3,49 @@ import { View, TouchableOpacity, Text, Image, ScrollView } from "react-native";
 import { SvgXml } from "react-native-svg";
 import { styled } from "nativewind";
 import { backSvg } from "../helpers/svgs";
-import i1 from "../assets/Rectangle1.png";
-import i2 from "../assets/Rectangle2.png";
-import i3 from "../assets/Rectangle3.png";
-import i4 from "../assets/Rectangle4.png";
-import i5 from "../assets/Rectangle5.png";
-import i6 from "../assets/Rectangle6.png";
+
 import OrderItem from "./Order";
 
 const StyledView = styled(View);
 const StyledText = styled(Text);
 const StyledImage = styled(Image);
 
+const i1 = require("../assets/Rectangle1.png");
 const ordersData = [
   {
     name: "Angel R.",
     work: "Furniture Assembly",
     item: "TV Mounting Apr 24   12:30 pm",
     amount: "$44.39/hr",
-    img: i2,
+    img: require("../assets/Rectangle2.png"),
   },
   {
     name: "Angel R.",
     work: "Furniture Assembly",
     item: "TV Mounting Apr 24   12:30 pm",
     amount: "$44.39/hr",
-    img: i3,
+    img: require("../assets/Rectangle3.png"),
   },
   {
     name: "Angel R.",
     work: "Furniture Assembly",
     item: "TV Mounting Apr 24   12:30 pm",
     amount: "$44.39/hr",
-    img: i4,
+    img: require("../assets/Rectangle4.png"),
   },
   {
     name: "Angel R.",
     work: "Furniture Assembly",
     item: "TV Mounting Apr 24   12:30 pm",
     amount: "$44.39/hr",
-    img: i5,
+    img: require("../assets/Rectangle5.png"),
   },
   {
     name: "Angel R.",
     work: "Furniture Assembly",
     item: "TV Mounting Apr 24   12:30 pm",
     amount: "$44.39/hr",
-    img: i6,
+    img: require("../assets/Rectangle6.png"),
   },
 ];
 
