@@ -1,12 +1,12 @@
 import { SafeAreaView } from "react-native";
-import BottomNav from "./components/BottomNav";
-import FinishedOrdersPage from "./components/FinishedOrdersPage";
+import PetsPage from "./components/PetsPage";
+import Sidebar from "./components/Sidebar";
 
 export default function App() {
   return (
     <SafeAreaView>
-      <FinishedOrdersPage />
-      <BottomNav />
+      <Sidebar />
+      <PetsPage />
     </SafeAreaView>
   );
 }
