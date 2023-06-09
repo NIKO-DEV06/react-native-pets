@@ -38,12 +38,12 @@ const Pets = ({ filter }: Props) => {
     return null;
   }
   return (
-    <StyledView className="bg-white rounded-3xl shadow-lg px-10 py-10 flex flex-col gap-3 border-[1px] border-[#d8d0c9] mt-[25]">
+    <StyledView className="bg-white rounded-3xl shadow-xl px-10 py-10 flex flex-col gap-3 border-[1px] border-[#d8d0c9] mt-[25]">
       <StyledText
         style={{ fontFamily: "Outfit_500Medium" }}
         className="text-[32px] font-semibold tracking-wider"
       >
-        Pets <StyledText className="opacity-50">(7)</StyledText>
+        Pets <StyledText className="text-[#979593]">(7)</StyledText>
       </StyledText>
       <StyledView>
         <StyledView className="flex flex-row flex-wrap gap-6">
@@ -67,7 +67,7 @@ const Pets = ({ filter }: Props) => {
                     </StyledText>
                     <StyledText
                       style={{ fontFamily: "Outfit_400Regular" }}
-                      className="text-[28px] opacity-50"
+                      className="text-[28px] text-[#979593]"
                     >
                       {data.type}
                     </StyledText>
@@ -76,7 +76,7 @@ const Pets = ({ filter }: Props) => {
                     <StyledView className="flex flex-row justify-between px-5 pt-7 pb-2">
                       <StyledText
                         style={{ fontFamily: "Outfit_400Regular" }}
-                        className="text-[28px] opacity-50"
+                        className="text-[28px] text-[#979593]"
                       >
                         Gender:
                       </StyledText>
@@ -90,7 +90,7 @@ const Pets = ({ filter }: Props) => {
                     <StyledView className="flex flex-row justify-between px-5 py-2">
                       <StyledText
                         style={{ fontFamily: "Outfit_400Regular" }}
-                        className="text-[28px] opacity-50"
+                        className="text-[28px] text-[#979593]"
                       >
                         Age:
                       </StyledText>
@@ -104,7 +104,7 @@ const Pets = ({ filter }: Props) => {
                     <StyledView className="flex flex-row justify-between px-5 pb-7 pt-2">
                       <StyledText
                         style={{ fontFamily: "Outfit_400Regular" }}
-                        className="text-[28px] opacity-50"
+                        className="text-[28px] text-[#979593]"
                       >
                         Weight:
                       </StyledText>

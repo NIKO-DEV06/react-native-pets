@@ -20,7 +20,6 @@ const PetsPage = () => {
   };
   let [fontsLoaded] = useFonts({
     Outfit_400Regular,
-
     Outfit_500Medium,
   });
 
@@ -30,7 +29,7 @@ const PetsPage = () => {
   return (
     <ScrollView>
       <StyledView className="pl-[200px] mx-auto w-screen pt-[50] pr-[25]">
-        <StyledView className="bg-white rounded-3xl shadow-lg px-10 py-10 flex flex-row gap-3 justify-center border-[1px] border-[#d8d0c9]">
+        <StyledView className="bg-white rounded-3xl shadow-lg px-10 pb-5 pt-2 flex flex-row gap-3 justify-center border-[1px] border-[#d8d0c9]">
           <TouchableOpacity
             onPress={() => setFilterHandler("dog")}
             className={`flex flex-row items-center py-3 px-[60] rounded-xl justify-center gap-3 ${
