@@ -32,7 +32,7 @@ const PetsPage = () => {
         <StyledView className="bg-white rounded-3xl shadow-lg px-10 pb-5 pt-2 flex flex-row gap-3 justify-center border-[1px] border-[#d8d0c9]">
           <TouchableOpacity
             onPress={() => setFilterHandler("dog")}
-            className={`flex flex-row items-center py-3 px-[60] rounded-xl justify-center gap-3 ${
+            className={`flex flex-row items-center pb-3 pt-1 px-[60] rounded-xl justify-center gap-3 ${
               filter === "dog" ? "bg-[#FFDF9C]" : "bg-white"
             } border-[1px] border-[#d8d0c9]`}
           >
@@ -46,7 +46,7 @@ const PetsPage = () => {
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => setFilterHandler("cat")}
-            className={`flex flex-row items-center py-3 px-[60] rounded-xl justify-center gap-3 ${
+            className={`flex flex-row items-center pb-3 pt-1 px-[60] rounded-xl justify-center gap-3 ${
               filter === "cat" ? "bg-[#FFDF9C]" : "bg-white"
             } border-[1px] border-[#d8d0c9]`}
           >
@@ -60,7 +60,7 @@ const PetsPage = () => {
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => setFilterHandler("pig")}
-            className={`flex flex-row items-center py-3 px-[60] rounded-xl justify-center gap-3 ${
+            className={`flex flex-row items-center pb-3 pt-1 px-[60] rounded-xl justify-center gap-3 ${
               filter === "pig" ? "bg-[#FFDF9C]" : "bg-white"
             } border-[1px] border-[#d8d0c9]`}
           >
