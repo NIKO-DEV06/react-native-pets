@@ -38,7 +38,7 @@ const Pets = ({ filter }: Props) => {
     return null;
   }
   return (
-    <StyledView className="bg-white rounded-3xl shadow-xl px-10 py-10 flex flex-col gap-3 border-[1px] border-[#d8d0c9] mt-[25]">
+    <StyledView className="bg-white rounded-3xl shadow-xl pl-5 py-10 flex flex-col gap-3 border-[1px] border-[#d8d0c9] mt-[25]">
       <StyledText
         style={{ fontFamily: "Outfit_500Medium" }}
         className="text-[32px] font-semibold tracking-wider"

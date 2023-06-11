@@ -29,10 +29,10 @@ const PetsPage = () => {
   return (
     <ScrollView>
       <StyledView className="pl-[200px] mx-auto w-screen pt-[50] pr-[25]">
-        <StyledView className="bg-white rounded-3xl shadow-lg px-10 pb-5 pt-2 flex flex-row gap-3 justify-center border-[1px] border-[#d8d0c9]">
+        <StyledView className="bg-white w-full rounded-3xl shadow-lg pb-5 pt-2 flex flex-row gap-3 justify-center border-[1px] border-[#d8d0c9]">
           <TouchableOpacity
             onPress={() => setFilterHandler("dog")}
-            className={`flex flex-row items-center pb-3 pt-1 px-[60] rounded-xl justify-center gap-3 ${
+            className={`flex flex-row items-center translate-x-[-10px] pb-3 pt-1 px-[62] rounded-xl justify-center gap-3 ${
               filter === "dog" ? "bg-[#FFDF9C]" : "bg-white"
             } border-[1px] border-[#d8d0c9]`}
           >
@@ -46,7 +46,7 @@ const PetsPage = () => {
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => setFilterHandler("cat")}
-            className={`flex flex-row items-center pb-3 pt-1 px-[60] rounded-xl justify-center gap-3 ${
+            className={`flex flex-row items-center translate-x-[-5px] pb-3 pt-1 px-[62] rounded-xl justify-center gap-3 ${
               filter === "cat" ? "bg-[#FFDF9C]" : "bg-white"
             } border-[1px] border-[#d8d0c9]`}
           >
@@ -60,7 +60,7 @@ const PetsPage = () => {
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => setFilterHandler("pig")}
-            className={`flex flex-row items-center pb-3 pt-1 px-[60] rounded-xl justify-center gap-3 ${
+            className={`flex flex-row items-center pb-3 pt-1 px-[62] rounded-xl justify-center gap-3 ${
               filter === "pig" ? "bg-[#FFDF9C]" : "bg-white"
             } border-[1px] border-[#d8d0c9]`}
           >
