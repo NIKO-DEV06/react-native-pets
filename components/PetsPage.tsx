@@ -29,12 +29,12 @@ const PetsPage = () => {
   return (
     <ScrollView>
       <StyledView className="pl-[200px] mx-auto w-screen pt-[50] pr-[25]">
-        <StyledView className="bg-white w-full rounded-3xl shadow-lg pb-5 pt-2 flex flex-row gap-3 justify-center border-[1px] border-[#d8d0c9]">
+        <StyledView className="bg-white w-full rounded-3xl shadow-md pb-5 pt-2 flex flex-row gap-3 justify-center">
           <TouchableOpacity
             onPress={() => setFilterHandler("dog")}
             className={`flex flex-row items-center translate-x-[-10px] pb-3 pt-1 px-[62] rounded-xl justify-center gap-3 ${
               filter === "dog" ? "bg-[#FFDF9C]" : "bg-white"
-            } border-[1px] border-[#d8d0c9]`}
+            } shadow-md`}
           >
             <SvgXml xml={dogBoneSvg} width={35} height={35} />
             <StyledText
@@ -48,7 +48,7 @@ const PetsPage = () => {
             onPress={() => setFilterHandler("cat")}
             className={`flex flex-row items-center translate-x-[-5px] pb-3 pt-1 px-[62] rounded-xl justify-center gap-3 ${
               filter === "cat" ? "bg-[#FFDF9C]" : "bg-white"
-            } border-[1px] border-[#d8d0c9]`}
+            } shadow-md`}
           >
             <SvgXml xml={catSvg} width={35} height={35} />
             <StyledText
@@ -62,7 +62,7 @@ const PetsPage = () => {
             onPress={() => setFilterHandler("pig")}
             className={`flex flex-row items-center pb-3 pt-1 px-[62] rounded-xl justify-center gap-3 ${
               filter === "pig" ? "bg-[#FFDF9C]" : "bg-white"
-            } border-[1px] border-[#d8d0c9]`}
+            } shadow-md`}
           >
             <SvgXml xml={PigSvg} width={35} height={35} />
             <StyledText
