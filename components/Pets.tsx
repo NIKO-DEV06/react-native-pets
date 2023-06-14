@@ -7,6 +7,7 @@ import {
   useFonts,
   Outfit_400Regular,
   Outfit_500Medium,
+  Outfit_300Light,
 } from "@expo-google-fonts/outfit";
 import { actions } from "../helpers/svgs";
 
@@ -29,8 +30,8 @@ interface DataItem {
 
 const Pets = ({ filter }: Props) => {
   let [fontsLoaded] = useFonts({
+    Outfit_300Light,
     Outfit_400Regular,
-
     Outfit_500Medium,
   });
 
@@ -38,7 +39,7 @@ const Pets = ({ filter }: Props) => {
     return null;
   }
   return (
-    <StyledView className="bg-white rounded-3xl shadow-md pl-5 py-10 flex flex-col gap-3 mt-[25]">
+    <StyledView className="bg-white rounded-3xl shadow-md pl-5 py-5 flex flex-col gap-3 mt-[25]">
       <StyledText
         style={{ fontFamily: "Outfit_500Medium" }}
         className="text-[32px] font-semibold tracking-wider"
@@ -66,7 +67,7 @@ const Pets = ({ filter }: Props) => {
                       {data.name}
                     </StyledText>
                     <StyledText
-                      style={{ fontFamily: "Outfit_400Regular" }}
+                      style={{ fontFamily: "Outfit_300Light" }}
                       className="text-[28px] text-[#979593]"
                     >
                       {data.type}
@@ -75,7 +76,7 @@ const Pets = ({ filter }: Props) => {
                   <StyledView className="flex flex-col  border-[1px] border-[#d8d0c9] rounded-b-2xl">
                     <StyledView className="flex flex-row justify-between px-5 pt-7 pb-2">
                       <StyledText
-                        style={{ fontFamily: "Outfit_400Regular" }}
+                        style={{ fontFamily: "Outfit_300Light" }}
                         className="text-[28px] text-[#979593]"
                       >
                         Gender:
@@ -89,7 +90,7 @@ const Pets = ({ filter }: Props) => {
                     </StyledView>
                     <StyledView className="flex flex-row justify-between px-5 py-2">
                       <StyledText
-                        style={{ fontFamily: "Outfit_400Regular" }}
+                        style={{ fontFamily: "Outfit_300Light" }}
                         className="text-[28px] text-[#979593]"
                       >
                         Age:
@@ -103,7 +104,7 @@ const Pets = ({ filter }: Props) => {
                     </StyledView>
                     <StyledView className="flex flex-row justify-between px-5 pb-7 pt-2">
                       <StyledText
-                        style={{ fontFamily: "Outfit_400Regular" }}
+                        style={{ fontFamily: "Outfit_300Light" }}
                         className="text-[28px] text-[#979593]"
                       >
                         Weight:
